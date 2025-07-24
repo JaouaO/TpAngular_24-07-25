@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import {NgStyle} from '@angular/common';
+import {NgClass, NgStyle} from '@angular/common';
+import {StarRatingComponent} from '../../components/star-rating/star-rating.component';
 
 @Component({
   selector: 'app-movie-list',
   imports: [
-    NgStyle
+    NgStyle,
+    StarRatingComponent
   ],
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.scss'
